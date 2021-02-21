@@ -1,7 +1,7 @@
-# spring-hibernate-one-to-many
+# spring-hibernate-eager-vs-lazy
 
-Follow-up to critically acclaimed spring-hibernate-demo and spring-hibernate-one-to-one
-I'm smelling a cinematic universe here
+Yet another follow-up to well known recent hits: acclaimed spring-hibernate-demo and spring-hibernate-one-to-one
+The made a trilogy out of Hobbit, so cut me some slack.
 
 ## Tech stack
 * Java 8
@@ -9,3 +9,4 @@ I'm smelling a cinematic universe here
 * MySQL
 * JDBC
 * Hibernate
+* HQL
