@@ -27,11 +27,16 @@ public class EagerLazyDemo {
 			int theId = 1;
 			Instructor tempInstructor = session.get(Instructor.class, theId);
 
-			System.out.println("tempInstructor " + tempInstructor);
+			tempInstructor.getCourses();
+			
+			session.getTransaction().commit();
+			
+			System.out.println("Session closed.");
+			
+			System.out.println("tempInstructor: " + tempInstructor);
 
 			System.out.println("the associated courses: " + tempInstructor.getCourses());
 
-			session.getTransaction().commit();
 		} catch (Exception exc) {
 			exc.printStackTrace();
 		} finally {
